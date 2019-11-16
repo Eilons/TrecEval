@@ -1,11 +1,10 @@
 package com.Technion.Evaluation;
 
+import com.Technion.Utils.Utils;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
-import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.*;
 
 public class ScoreFileReader {

@@ -1,4 +1,4 @@
-package com.Technion.Evaluation;
+package com.Technion.Utils;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;

@@ -1,5 +1,7 @@
 package com.Technion.Evaluation;
 
+import com.Technion.Utils.Utils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -45,7 +47,7 @@ public class Rouge {
 
             int overlap = 0;
             if (entry.getValue() > 0) {
-                List<String> sysNgram = getNGramTokens(ngram,Utils.splitBySpace(sysQuery)); // the system suggested query
+                List<String> sysNgram = getNGramTokens(ngram, Utils.splitBySpace(sysQuery)); // the system suggested query
                 List<String> refNgram = getNGramTokens(ngram,Utils.splitBySpace(entry.getKey())); // the reference query (from qrel)
 
                 for (String sysToken : sysNgram) {
