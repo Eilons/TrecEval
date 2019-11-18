@@ -5,8 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
 
   	<properties>
-		<powermock.version>1.5.4</powermock.version>
 		<easymock.version>3.2</easymock.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>  
 	
   
@@ -59,8 +59,8 @@
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.0.0</version>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.5.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -105,8 +105,9 @@
 		<!-- TEST DEPENDENCIES -->
 		<dependency>
 			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.10.19</version>
+			<artifactId>mockito-core</artifactId>
+			<version>3.1.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.easymock</groupId>
@@ -118,10 +119,10 @@
 		
 		<!-- Guava -->
 <!-- 	  	<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>27.0</version>
-		</dependency>  -->
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>27.1-jre</version>
+</dependency>  -->
 		
  
 
