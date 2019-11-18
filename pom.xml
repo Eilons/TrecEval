@@ -7,9 +7,6 @@
   	<properties>
 		<powermock.version>1.5.4</powermock.version>
 		<easymock.version>3.2</easymock.version>
-		
-<!--     		<nd4j.version>0.4-rc3.7</nd4j.version> 
-        <dl4j.version>0.4-rc3.7</dl4j.version>  -->  
 	</properties>  
 	
   
@@ -18,10 +15,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
+				<version>3.6.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<excludes>
 						<exclude>**/log4j.properties</exclude>
 					</excludes>
@@ -32,7 +29,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.Technion.Evaluation.RunEvaluation</mainClass>
+							<mainClass>main.RunEvaluation</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
@@ -59,11 +56,11 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.0</version>
 		</dependency>
-		
-				<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.0.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -107,34 +104,9 @@
 		
 		<!-- TEST DEPENDENCIES -->
 		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-module-junit4</artifactId>
-			<version>${powermock.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-api-easymock</artifactId>
-			<version>${powermock.version}</version>
-			<scope>test</scope>  
-		</dependency>  
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-api-mockito</artifactId>
-			<version>${powermock.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-module-junit4-rule</artifactId>
-			<version>${powermock.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-classloading-xstream</artifactId>
-			<version>${powermock.version}</version>
-			<scope>test</scope>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.10.19</version>
 		</dependency>
 		<dependency>
 			<groupId>org.easymock</groupId>
@@ -148,7 +120,7 @@
 <!-- 	  	<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>18.0</version>
+			<version>27.0</version>
 		</dependency>  -->
 		
  

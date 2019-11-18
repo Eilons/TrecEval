@@ -13,7 +13,7 @@ public class F1Measure {
      * @param qrel query with relevant judgments (Non empty!).
      * @return F1 measure: 2* (precision*recall)/(precision+recall)
      */
-    protected static double
+    public static double
     computeF1Measure(List<String> ranking, Map<String, Integer> qrel, int k) {
 
         Utils.ifFalseCrash(!qrel.isEmpty(), "Qrel must be non empty - F1");
@@ -26,7 +26,7 @@ public class F1Measure {
         return 2.0*(precision*recall)/ (precision+recall);
     }
 
-    protected static double
+    public static double
     computeF1Measure(double precision, double recall) {
 
         if (precision + recall == 0) return 0;

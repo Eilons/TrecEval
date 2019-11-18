@@ -17,7 +17,7 @@ public class AveP {
      * @param qrel query with relevant judgments (Non empty!).
      * @return average precision
      */
-    protected static double
+    public static double
     computeAveragePrecision(List<String> ranking, Map<String, Integer> qrel) {
 
         Utils.ifFalseCrash(!qrel.isEmpty(), "Qrel must be non empty - AP");

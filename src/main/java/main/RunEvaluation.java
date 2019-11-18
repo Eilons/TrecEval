@@ -1,5 +1,6 @@
-package com.Technion.Evaluation;
+package main;
 
+import com.Technion.Evaluation.*;
 import com.Technion.Utils.ParseCmd;
 import com.Technion.Utils.Utils;
 import com.google.common.collect.Table;

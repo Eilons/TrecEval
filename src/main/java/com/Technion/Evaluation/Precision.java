@@ -26,7 +26,7 @@ public class Precision {
         for (i=0; i<Math.min(ranking.size(), k); i++) {
             if (qrel.containsKey(ranking.get(i)) ) {
                 if (qrel.get(ranking.get(i)) > 0){
-                    tp++;         //if true, the query is relevant
+                    tp++;         //if true, the document is relevant
                 }
             }
         }
