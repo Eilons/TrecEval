@@ -46,7 +46,7 @@ public class RunEvaluation {
     private Table<String, String, Integer> qrels; // rows:uuid, cols: query tokenization form, val: reljudgments
     // query -> docId -> score (query->score are ordered per insertion to the map => the res file must be sorted before)
     private Map<String,Map<String,Double>> resPerformance;
-    private LinkedHashMap<String, LinkedHashMap<String,Double>> evalMeasures; // uuid -> eval Measure -> value
+    private LinkedHashMap<String, LinkedHashMap<String,Double>> evalMeasures; // Query Id -> eval Measure -> value
 
     public RunEvaluation (String qrelPath, File resPath) {
 
