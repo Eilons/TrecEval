@@ -429,9 +429,7 @@ public class RunEvaluation {
         runEvaluation.getNDCGK(10);
         runEvaluation.getNDCGK(20);
 
-
         //runEvaluation.getPrecision();
-
 
         //runEvaluation.getMRR();
 
