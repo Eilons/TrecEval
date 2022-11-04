@@ -7,7 +7,7 @@ This is a maven project that was built using java version 1.8.0 Use the Maven bu
 
 To run the project you should provide the following arguments: 
 
-"-q" (cSeed) - qrel file. 
+"-q" - qrel file. 
 "-r" - Prediction file (or directory with predicition files). Files type must be ".res". 
 "-o" - Out path directory
 "-d" - Optional. Pass this argument if you want predicition per document
