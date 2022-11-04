@@ -10,6 +10,6 @@ To run the project you should provide the following arguments:
 "-q" - qrel file. 
 "-r" - Prediction file (or directory with predicition files). Files type must be ".res". 
 "-o" - Out path directory
-"-d" - Optional. Pass this argument if you want predicition per document
+"-d" - Optional. Pass this argument if you want prediction per document
 
-java -jar "the executable jar" -q "Path to qrel file" -r "Path to predicition file.res" -o "Out path" -d
+java -jar "the executable jar" -q "Path to qrel file" -r "Path to prediction file.res" -o "Out path" -d
